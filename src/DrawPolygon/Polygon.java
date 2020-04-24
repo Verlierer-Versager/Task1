@@ -22,7 +22,6 @@ public class Polygon {
     }
 
     private ArrayList<Point> points = new ArrayList<>();
-    //public int size=0;
 
     public ArrayList<Point> getPoints() {
         return points;
@@ -44,8 +43,6 @@ public class Polygon {
         for (int i = 0; i < points.size(); i++) {
             if (arePointsEqual(newPoint, points.get(i))) {
                 return true;
-                //points.add(newPoint);
-                //throw new Exception("Point has already been added");
             }
         }
         return false;
